@@ -1,0 +1,39 @@
+﻿<Configuration>
+    <MappedFolders>
+        <!-- 输入法词库 -->
+        <MappedFolder>
+            <HostFolder>.\ime\chs_sys</HostFolder>
+            <SandboxFolder>C:\Windows\InputMethod\CHS</SandboxFolder>
+            <ReadOnly>false</ReadOnly>
+        </MappedFolder>
+        <MappedFolder>
+            <HostFolder>.\ime\Chs_user</HostFolder>
+            <SandboxFolder>C:\Users\WDAGUtilityAccount\AppData\Roaming\Microsoft\InputMethod\Chs</SandboxFolder>
+            <ReadOnly>false</ReadOnly>
+        </MappedFolder>
+        <!-- 脚本 -->
+        <MappedFolder>
+            <HostFolder>.\scripts</HostFolder>
+            <SandboxFolder>C:\scripts</SandboxFolder> 
+            <ReadOnly>true</ReadOnly> 
+        </MappedFolder>
+        <!-- download -->
+        <MappedFolder>
+            <HostFolder>.\download</HostFolder>
+            <SandboxFolder>C:\Users\WDAGUtilityAccount\Downloads</SandboxFolder> 
+            <ReadOnly>false</ReadOnly> 
+        </MappedFolder>
+    </MappedFolders>
+    <!-- 音频输入 -->
+    <AudioInput>Enable</AudioInput>
+    <!-- 视频输入 -->
+    <VideoInput>Disable</VideoInput>
+    <!-- 内存限制 -->
+    <MemoryInMB>2048</MemoryInMB>
+    <!-- 开机运行脚本 -->
+    <LogonCommand>
+        <Command>powershell.exe -executionpolicy bypass -file C:\scripts\init.ps1</Command>
+    </LogonCommand>
+    <!-- vGpu -->
+    <vGPU>Enable</vGPU>
+</Configuration>
