@@ -40,7 +40,7 @@
 
 ### 用户词库
  
-- 需要挂载用户次库可以复制
+- 需要挂载用户词库可以复制
 
     `C:\Windows\InputMethod\CHS`到`.\ime\chs_sys`
 
